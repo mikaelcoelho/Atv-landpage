@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="shortcut icon" href="favicon/cherry-svgrepo-com.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2 ?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar-container" id="topo">
+        <a href="#sobre-mim">Sobre mim</a>
+        <a href="#servicos">Serviços</a>
+        <a href="">Contato</a>
+    </div>
+
+    <div class="secao-inicial">
+        <h1 style="margin-left: 2vw; color:rgba(55, 35, 9, 0.308)">Mikael Landing Page</h1>
+    </div>
+
+    <div class="conteudo-inicio" id="sobre-mim">
+        <h1 class="nunito-sans-titulo">Minha Vida acadêmica</h1>
+        <div class="conteudo">
+
+            <ol class="nunito-sans-texto">
+                <li>Ensino Médio Técnico em Informática - Radier</li>
+                <li>Design de Produto - Universidade Vila Velha</li>
+                <li>Análise e Desenvolvimento de Sistemas - Universidade Vila Velha (em andamento)</li>
+            </ol>
+        </div>
+        <h1 class="nunito-sans-titulo" style="justify-content: center; display: flex;">Experiências profissionais</h1>
+        <div class="conteudo">
+            <ol class="nunito-sans-texto">
+                <li>Estágio em Design de Produto (UVVON) - 2 anos </li>
+            </ol>
+        </div>
+    </div>
+
+    <h1 class="nunito-sans-titulo" style="justify-content: center; display: flex;">Conhecimentos</h1>
+
+    <div class="grid-container">
+        <div class="subclasse">
+            <div>Linguagens de Programação</div>
+        </div>
+        <div class="subclasse-separador"></div>
+        <div class="subclasse-itens"><img src="imgs/Python-logo-notext.png" alt="Python"></div>
+        <div class="subclasse-itens"><img src="imgs/java.png" alt="Java"></div>
+        <div class="subclasse-itens"><img src="imgs/ISO_C++_Logo.svg" alt="C++"></div>
+        <div class="subclasse-itens"><img src="imgs/330px-Logo_C_sharp.png" alt="C#"></div>
+        <div class="subclasse-itens"><img src="imgs/Sql_data_base_with_logo.png" alt="sql"></div>
+    </div>
+
+    <div class="grid-container">
+        <div class="subclasse">
+            <div>Softwares</div>
+        </div>
+        <div class="subclasse-separador"></div>
+        <div class="subclasse-itens"><img src="imgs/MySQL_logo.png" alt="MySQL"></div>
+        <div class="subclasse-itens"><img src="imgs/Microsoft_SQL_Server_2025_icon.png" alt="Microsoft SQL Server">
+        </div>
+        <div class="subclasse-itens"><img src="imgs/Figma-logo.png" alt="Figma"></div>
+        <div class="subclasse-itens"><img src="imgs/Visual_Studio_Code_1.35_icon.png" alt="Visual Studio Code"></div>
+        <div class="subclasse-itens"><img src="imgs/Adobe_Illustrator_CC_icon.png" alt="Adobe Illustrator"></div>
+    </div>
+
+    <h1 class="nunito-sans-titulo" style="justify-content: center; display: flex;" id="servicos">Serviços</h1>
+
+    <div class="servicos">
+        <table>
+            <tr>
+                <th colspan="2">Construção de Homepage</th>
+            </tr>
+            <tr>
+                <td>Página estática com CSS e HTML</td>
+                <td>R$ 100,00</td>
+            </tr>
+            <tr>
+                <td>Página dinâmica</td>
+                <td>R$ 150,00</td>
+            </tr>
+            <tr>
+                <td>Página super avançada</td>
+                <td>R$ 200,00</td>
+            </tr>
+        </table>
+    </div>
+    <h1 class="nunito-sans-titulo" style="justify-content: center; display: flex;">Entre em contato</h1>
+    <div class="contato">
+        <form action="/enviar" method="post" autocomplete="on">
+            <div>
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome">
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" autocomplete="tel"
+                    placeholder="(99) 12345-6789">
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email">
+            </div>
+
+            <div class="opcoes-radio">
+                <div>
+                    <label for="pessoa_juridica">Pessoa jurídica</label>
+                    <input type="radio" name="tipo-cliente" id="pessoa_juridica">
+                </div>
+                <div>
+                    <label for="pessoa_fisica">Pessoa Física</label>
+                    <input type="radio" name="tipo-cliente" id="pessoa_fisica">
+                </div>
+            </div>
+
+            <div>
+                <label for="Tipo_servico">Tipo de Serviço</label>
+                <select name="Tipo_servico" id="Tipo_servico">
+                    <option value="Pagina-estatica-CSS-e-HTML">Página estática com CSS e HTML</option>
+                    <option value="Pagina-dinamica">Página dinâmica</option>
+                    <option value="Pagina-super-avancada">Página super avançada</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="Texto-servico">Descreva o serviço que deve ser realizado</label>
+                <textarea name="Texto-servico" id="Texto-servico"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+
+    </div>
+    <div class="voltar-inicio">
+        <a href="#topo">Voltar ao topo <img src="imgs/icone-cima.svg" alt="icone-cima"></a>
+    </div>
+    <!-- 
+    <footer></footer>
+    -->
+
+
+
+
+
+
+</body>
+
+</html>
