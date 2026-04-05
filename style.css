@@ -81,7 +81,7 @@ body {
     margin-right: 1vw;
     text-decoration: none;
     color: rgb(55, 35, 9);
-    transition: all 0.5s;
+    transition: color 0.5s;
 }
 
 .navbar-container a:hover {
@@ -285,19 +285,53 @@ input[type="tel"]{
     width:10vw;
 }
 
-input[type="radio"]{
-    height:fit-content;
+@property --cor-radio{
+    syntax: '<color>';
+   
+    initial-value: #5dccff;
 
+}
+
+input[type="radio"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1vw;
+    height: 1vw;
+    background-color:white;
+    border-radius: 100%;
+    box-sizing: border-box;
+    margin:0  0.8vw 0 0.5vw;
+    appearance: none;
+    transition: 0.2s var(--cor-radio) ease-in-out ;
+
+}
+
+input[type="radio"]::before{
+    transform: scale(0);
+    content:"";
+    width:50%;    
+    height:50%;
+    border-radius: 100%;
+    --cor-radio: #5dccff;
+    box-shadow: inset 0 1vw 2vw var(--cor-radio);
+
+}
+
+input[type="radio"]:checked::before{
+    transform:scale(1);
 }
 
 .opcoes-radio{
     display:flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: flex-start;
+   
 }
 
-
+.opcoes-radio div{
+    display: flex;
+    flex-direction: row;
+}
 
 textarea{
     display: flex;
