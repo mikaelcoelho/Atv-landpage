@@ -204,6 +204,7 @@ body {
     justify-content: center;
     margin-top: 2vw;
     margin-bottom: 2vw;
+
 }
 
 table{
@@ -213,15 +214,15 @@ table{
     color:#5dccff;
     border-radius: 0.8vw;
     box-shadow: 0.4vw 0.4vw 0.8vw rgba(0, 0, 0, 0.164);
-    border-collapse: collapse;
     overflow: hidden;
+    border-collapse:collapse;
+
 }
 
 th{
-    padding:1vw;
+    padding:1vw 0 1vw 0;
     background-color: #5dccff;
     color:white;
-
 }
 
 td{
@@ -271,8 +272,12 @@ input{
     height: 1.4vw;
     border-radius: 0.2vw;
     font-size: 1vw;
-    
+    outline:none;
+    box-sizing: border-box;
+    padding:0.1vw;
 }
+
+
 input[type="text"]{
     width:15vw;
 }
@@ -295,6 +300,7 @@ input[type="tel"]{
 input[type="radio"]{
     display: flex;
     justify-content: center;
+    align-self: center;
     align-items: center;
     width: 1vw;
     height: 1vw;
@@ -318,45 +324,126 @@ input[type="radio"]::before{
 
 }
 
+
 input[type="radio"]:checked::before{
     transform:scale(1);
 }
 
-.opcoes-radio{
-    display:flex;
-    flex-direction: row;
-   
+input[type="radio"]:hover::before{
+    transform:scale(1);
+    --cor-radio:#5dccff80;
 }
 
-.opcoes-radio div{
-    display: flex;
-    flex-direction: row;
+input[type="radio"]:checked:hover::before {
+    content:"";
+    transform:scale(1);
+    --cor-radio:#1d8cc0;
 }
+
+
+
+
+form div label{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.tipo-servico label:first-of-type{
+    margin-top: 1vw;
+
+
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    width: 1vw;
+    height: 1vw;
+    padding:0;
+    margin:0 0 0 1vw;
+    background-color: white;
+    border-radius: 0.1vw;
+    outline:none;
+    display: flex; 
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    
+}
+
+
+input[type="checkbox"]::before{
+    content:"";
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #5dccff;
+    border:none;
+    outline:none;
+    transform: scale(0);
+    
+}
+
+input[type="checkbox"]:checked::before{
+    transform: scale(1);
+
+}
+
+input[type="checkbox"]:hover::before{
+    transform: scale(1);
+    background-color: #5dccff80;
+}
+
+input[type="checkbox"]:checked:hover::before{
+    transform: scale(1);
+    background-color: #1d8cc0;
+}
+
 
 textarea{
     display: flex;
     justify-content: center;
     width:45vw;
     height:10vw;
+    margin-bottom:1vw;
+    border:none;
+    border-radius: 1vw;
+    resize: none;
+    padding:0.5vw;
+    font-size:0.8vw;
+    outline: none;
 
 }
+button{
+    width:20vw;
+    height:3vw;
+    margin-bottom: 1vw;
+    background-color: #5dccff;
+    color:white;
+    font-size:1.4vw;
+    border:none;
+    border-radius: 0.5vw;
+    cursor:pointer;
+}
 
+button:hover{
+    background-color: #5dccff;
+}
 
 .voltar-inicio{
+    margin: 1vw 0 1vw 0;
     display: flex;
     justify-content: center;
     align-items: center;
     
-    
-
 }
 
 .voltar-inicio a{
     display: flex;
     text-decoration: none;
-    font-size: 1.5vw;
-    width:20vw;
-    height:5vw;
+    font-size: 1.2vw;
+    width:14vw;
+    height:3vw;
     background-image:linear-gradient(white,white), linear-gradient(to right,rgb(213, 243, 246), rgb(170, 221, 255));
     border:0.2vw solid transparent;
     border-radius: 1vw;
@@ -370,11 +457,9 @@ textarea{
 
 .voltar-inicio a img{
     margin-top: 0.5vw;
-    height:3vw;
+    height:2.5vw;
 
 }
-
-
 
 .voltar-inicio a:hover{
     background-image: linear-gradient(to right,rgb(213, 243, 246), rgb(170, 221, 255));
@@ -387,7 +472,6 @@ textarea{
 
     
 }
-
 
 footer{
     height:10vw;
@@ -402,6 +486,4 @@ footer p{
     color:rgb(55, 35, 9);
     font-size: 2vw;
     
-
-
 }

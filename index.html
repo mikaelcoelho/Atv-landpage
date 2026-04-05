@@ -19,7 +19,7 @@
     <div class="navbar-container" id="topo">
         <a href="#sobre-mim">Sobre mim</a>
         <a href="#servicos">Serviços</a>
-        <a href="">Contato</a>
+        <a href="#contato">Contato</a>
     </div>
 
     <div class="secao-inicial">
@@ -93,7 +93,7 @@
         </table>
     </div>
     <h1 class="nunito-sans-titulo" style="justify-content: center; display: flex;">Entre em contato</h1>
-    <div class="contato">
+    <div class="contato" id="contato">
         <form action="/enviar" method="post" autocomplete="on">
             <div>
                 <label for="nome">Nome completo:</label>
@@ -107,28 +107,40 @@
 
             <div>
                 <label for="email">E-mail:</label>
-                <input type="email" name="email">
+                <input type="email" name="email" placeholder="seu@email.com">
             </div>
 
-            <div class="opcoes-radio">
                 <div>
-                    <label for="pessoa_juridica">Pessoa jurídica</label>
+                <div class="opcoes-radio">
+                    <label for="pessoa_juridica">Pessoa jurídica
                     <input type="radio" name="tipo-cliente" id="pessoa_juridica">
+                    </label>
                 </div>
-                <div>
-                    <label for="pessoa_fisica">Pessoa Física</label>
+                <div class="opcoes-radio">
+                    <label for="pessoa_fisica">Pessoa Física
                     <input type="radio" name="tipo-cliente" id="pessoa_fisica">
+                    </label>
                 </div>
+                </div>
+            
+
+
+            <div class="tipo-servico">
+                <label for="Tipo_servico">Tipo de Serviço</label>
+
+
+                <label for="opcao1">Página estática com CSS e HTML
+                    <input type="checkbox" name="tipo-servicos" value="Pagina-estatica" id="opcao1">
+                </label>
+                <label for="opcao2">Página dinâmica
+                    <input type="checkbox" name="tipo-servicos" value="Pagina-dinamica" id="opcao2">
+                </label>
+
+                <label for="opcao3">Página super avançada
+                    <input type="checkbox" name="tipo-servicos" value="Pagina-avacada" id="opcao3">
+                </label>
             </div>
 
-            <div>
-                <label for="Tipo_servico">Tipo de Serviço</label>
-                <select name="Tipo_servico" id="Tipo_servico">
-                    <option value="Pagina-estatica-CSS-e-HTML">Página estática com CSS e HTML</option>
-                    <option value="Pagina-dinamica">Página dinâmica</option>
-                    <option value="Pagina-super-avancada">Página super avançada</option>
-                </select>
-            </div>
 
             <div>
                 <label for="Texto-servico">Descreva o serviço que deve ser realizado</label>
