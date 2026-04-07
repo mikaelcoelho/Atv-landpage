@@ -3,7 +3,11 @@ html{
 
 }
 
-body {
+*{font-family: "Nunito Sans", sans-serif;
+
+}
+
+body{
     margin: 0;
     padding: 0;
     font-family: "Nunito Sans", sans-serif;
@@ -16,16 +20,13 @@ body {
 
 }
 
-.nunito-sans-titulo {
-    font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100,
-        "YTLC" 500;
-    font-size: 2.3vw;
-    margin:0;
+.titulos {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.1vw;
+  margin:0;
 }
 
 .nunito-sans-texto {
@@ -78,13 +79,7 @@ body {
 }
 
 .navbar-container a {
-    font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100,
-        "YTLC" 500;
     font-size: 1vw;
     padding: 1vw;
     margin-left: 1vw;
@@ -103,23 +98,31 @@ body {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: center;
     gap:3vw;
-    margin-bottom:3vw;
+    margin-bottom:5vw;
+    margin-top:5vw;
+    padding:1vw 0 1vw 0;
+    background-color: rgba(172, 233, 255, 0.384);
     
 }
 
 .conteudo {
-    width:20vw;
+    width:30vw;
+    height:15vw;
     display: flex;
     flex-direction: column;
     margin:0;
+    border-radius: 1vw;
+    background-color: rgba(255, 255, 255, 0.423);
+    padding:1vw;
     align-content: center;
-    justify-content:space-between;
     align-items: center;
 }
 
 .conteudo ol {
+    
+    align-self: center;
     padding: 0;
     list-style-type: none;
     counter-reset: meu-contador;
@@ -153,17 +156,22 @@ body {
 }
 
 .grid-container{
-    margin-top:2vw;
+    margin-top:4vw;
     display:flex;
     flex-wrap: wrap;
     gap:5vw;
     justify-content: center;
     align-items: center;
     margin-bottom: 3vw;
-
-
 }
 
+.grid-container:nth-child(1){
+    margin-top: 5vw;
+}
+
+.grid-container:nth-child(2){
+    margin-bottom: 5vw;
+}
 .subclasse{
     
     display:flex;
@@ -216,8 +224,8 @@ body {
 .servicos{
     display: flex;
     justify-content: center;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
 
 }
 
@@ -307,6 +315,16 @@ input[type="tel"]{
     width:10vw;
 }
 
+.linha-2-formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    margin-bottom:1vw;
+}
+
+
 @property --cor-radio{
     syntax: '<color>';
    
@@ -395,8 +413,24 @@ form div label{
 .tipo-servico{
     display: flex;
     align-items: end;
+    margin-top:0;
+
 
 }
+
+.tipo-servico label:first-of-type{
+    margin:0;
+}
+
+.tipo-servico div{
+    height: 1vw;
+    width:20vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+
 
 input[type="checkbox"]{
     appearance: none;
@@ -412,13 +446,14 @@ input[type="checkbox"]{
     align-self: center;
     justify-content: center;
     
+    
 }
 
 
 input[type="checkbox"]::before{
     content:"";
-    width: 0.5vw;
-    height: 0.5vw;
+    width: 50%;
+    height: 50%;
     background-color: #5dccff;
     border:none;
     outline:none;
@@ -466,10 +501,11 @@ button{
     border:none;
     border-radius: 0.5vw;
     cursor:pointer;
+    transition:0.2s ease-in-out background-color;
 }
 
 button:hover{
-    background-color: #5dccff;
+    background-color: #48b4e6;
 }
 
 .voltar-inicio{

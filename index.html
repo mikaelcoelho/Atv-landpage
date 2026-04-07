@@ -8,10 +8,11 @@
 
     <link rel="shortcut icon" href="favicon/cherry-svgrepo-com.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2 ?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
 </head>
 
@@ -23,7 +24,9 @@
     </div>
 
     <div class="secao-inicial">
-        <h1 style="margin-left: 2vw; color:rgba(55, 35, 9, 0.627); font-size:3vw;">Mikael Landing Page</h1>
+        <h1
+            style="margin-left: 2vw; color:rgba(55, 35, 9, 0.627); font-size:3vw; font-weight:700; font-family: Montserrat;">
+            Mikael Landing Page</h1>
         <div></div>
     </div>
 
@@ -31,7 +34,7 @@
 
 
         <div class="conteudo">
-            <h1 class="nunito-sans-titulo">Minha Vida acadêmica</h1>
+            <h1 class="titulos">Minha Vida acadêmica</h1>
             <ol class="nunito-sans-texto">
                 <li>Ensino Médio Técnico em Informática - Radier</li>
                 <li>Design de Produto - Universidade Vila Velha</li>
@@ -39,41 +42,43 @@
             </ol>
         </div>
         <div class="conteudo">
-            <h1 class="nunito-sans-titulo">Experiências profissionais</h1>
+            <h1 class="titulos">Experiências profissionais</h1>
             <ol class="nunito-sans-texto">
                 <li>Estágio em Design de Produto (UVVON) - 2 anos </li>
             </ol>
         </div>
     </div>
 
-    <h1 class="nunito-sans-titulo" style="justify-content: center; display: flex;">Conhecimentos</h1>
+    <h1 class="titulos" style="justify-content: center; display: flex;">Conhecimentos</h1>
 
-    <div class="grid-container">
-        <div class="subclasse">
-            <div>Linguagens de Programação</div>
+    <div>
+        <div class="grid-container">
+            <div class="subclasse">
+                <div>Linguagens de Programação</div>
+            </div>
+            <div class="subclasse-separador"></div>
+            <div class="subclasse-itens"><img src="imgs/Python-logo-notext.png" alt="Python"></div>
+            <div class="subclasse-itens"><img src="imgs/java.png" alt="Java"></div>
+            <div class="subclasse-itens"><img src="imgs/ISO_C++_Logo.svg" alt="C++"></div>
+            <div class="subclasse-itens"><img src="imgs/330px-Logo_C_sharp.png" alt="C#"></div>
+            <div class="subclasse-itens"><img src="imgs/Sql_data_base_with_logo.png" alt="sql"></div>
         </div>
-        <div class="subclasse-separador"></div>
-        <div class="subclasse-itens"><img src="imgs/Python-logo-notext.png" alt="Python"></div>
-        <div class="subclasse-itens"><img src="imgs/java.png" alt="Java"></div>
-        <div class="subclasse-itens"><img src="imgs/ISO_C++_Logo.svg" alt="C++"></div>
-        <div class="subclasse-itens"><img src="imgs/330px-Logo_C_sharp.png" alt="C#"></div>
-        <div class="subclasse-itens"><img src="imgs/Sql_data_base_with_logo.png" alt="sql"></div>
+        
+        <div class="grid-container">
+            <div class="subclasse">
+                <div>Softwares</div>
+            </div>
+            <div class="subclasse-separador"></div>
+            <div class="subclasse-itens"><img src="imgs/MySQL_logo.png" alt="MySQL"></div>
+            <div class="subclasse-itens"><img src="imgs/Microsoft_SQL_Server_2025_icon.png" alt="Microsoft SQL Server">
+            </div>
+            <div class="subclasse-itens"><img src="imgs/Figma-logo.png" alt="Figma"></div>
+            <div class="subclasse-itens"><img src="imgs/Visual_Studio_Code_1.35_icon.png" alt="Visual Studio Code"></div>
+            <div class="subclasse-itens"><img src="imgs/Adobe_Illustrator_CC_icon.png" alt="Adobe Illustrator"></div>
+        </div>
     </div>
 
-    <div class="grid-container">
-        <div class="subclasse">
-            <div>Softwares</div>
-        </div>
-        <div class="subclasse-separador"></div>
-        <div class="subclasse-itens"><img src="imgs/MySQL_logo.png" alt="MySQL"></div>
-        <div class="subclasse-itens"><img src="imgs/Microsoft_SQL_Server_2025_icon.png" alt="Microsoft SQL Server">
-        </div>
-        <div class="subclasse-itens"><img src="imgs/Figma-logo.png" alt="Figma"></div>
-        <div class="subclasse-itens"><img src="imgs/Visual_Studio_Code_1.35_icon.png" alt="Visual Studio Code"></div>
-        <div class="subclasse-itens"><img src="imgs/Adobe_Illustrator_CC_icon.png" alt="Adobe Illustrator"></div>
-    </div>
-
-    <h1 class="nunito-sans-titulo" style="justify-content: center; display: flex;" id="servicos">Serviços</h1>
+    <h1 class="titulos" style="justify-content: center; display: flex;" id="servicos">Serviços</h1>
 
     <div class="servicos">
         <table>
@@ -94,8 +99,8 @@
             </tr>
         </table>
     </div>
-    <h1 class="nunito-sans-titulo" style="justify-content: center; display: flex;">Entre em contato</h1>
-    <div class="contato" id="contato">
+    <h1 class="titulos" style="justify-content: center; display: flex;" id="contato">Entre em contato</h1>
+    <div class="contato">
         <form action="/enviar" method="post" autocomplete="on">
             <div>
                 <label for="nome">Nome completo:</label>
@@ -112,37 +117,48 @@
                 <input type="email" name="email" placeholder="seu@email.com">
             </div>
 
-            <div class="radio-container">
-                    
-                <div class="opcoes-radio">
-                    <input type="radio" name="tipo-cliente" id="pessoa_juridica">
-                    <input type="radio" name="tipo-cliente" id="pessoa_fisica">  
-                    
+
+
+            <div class="linha-2-formulario">
+                <div class="radio-container">
+
+                    <div class="opcoes-radio">
+                        <input type="radio" name="tipo-cliente" id="pessoa_juridica">
+                        <input type="radio" name="tipo-cliente" id="pessoa_fisica">
+
+                    </div>
+                    <div class="opcoes-radio">
+                        <label for="pessoa_juridica">Pessoa jurídica</label>
+                        <label for="pessoa_fisica">Pessoa Física
+
+                        </label>
+                    </div>
                 </div>
-                <div class="opcoes-radio">
-                    <label for="pessoa_juridica">Pessoa jurídica</label>
-                    <label for="pessoa_fisica">Pessoa Física
-                        
-                    </label>
+
+
+
+                <div class="tipo-servico">
+                    <label for="Tipo_servico">Tipo de Serviço</label>
+
+
+                    <div>
+                        <label class="texto-check" for="opcao1">Página estática com CSS e HTML </label>
+                        <input class="opcao-check" type="checkbox" name="tipo-servicos" value="Pagina-estatica"
+                            id="opcao1">
+                    </div>
+                    <div>
+
+                        <label class="texto-check" for="opcao2">Página dinâmica</label>
+                        <input class="opcao-check" type="checkbox" name="tipo-servicos" value="Pagina-dinamica"
+                            id="opcao2">
+
+                    </div>
+                    <div>
+                        <label class="texto-check" for="opcao3">Página super avançada</label>
+                        <input class="opcao-check" type="checkbox" name="tipo-servicos" value="Pagina-avacada"
+                            id="opcao3">
+                    </div>
                 </div>
-            </div>
-
-
-
-            <div class="tipo-servico">
-                <label for="Tipo_servico">Tipo de Serviço</label>
-
-
-                <label for="opcao1">Página estática com CSS e HTML
-                    <input type="checkbox" name="tipo-servicos" value="Pagina-estatica" id="opcao1">
-                </label>
-                <label for="opcao2">Página dinâmica
-                    <input type="checkbox" name="tipo-servicos" value="Pagina-dinamica" id="opcao2">
-                </label>
-
-                <label for="opcao3">Página super avançada
-                    <input type="checkbox" name="tipo-servicos" value="Pagina-avacada" id="opcao3">
-                </label>
             </div>
 
 
