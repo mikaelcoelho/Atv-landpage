@@ -56,7 +56,7 @@ body{
         "wdth" 100,
         "YTLC" 500;
     font-size: 2vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
 
 }
 
@@ -101,9 +101,8 @@ body{
     justify-content: center;
     gap:3vw;
     margin-bottom:5vw;
-    margin-top:5vw;
+    margin-top:3vw;
     padding:1vw 0 1vw 0;
-    background-color: rgba(172, 233, 255, 0.384);
     
 }
 
@@ -113,9 +112,7 @@ body{
     display: flex;
     flex-direction: column;
     margin:0;
-    border-radius: 1vw;
-    background-color: rgba(255, 255, 255, 0.423);
-    padding:1vw;
+    padding:0vw;
     align-content: center;
     align-items: center;
 }
